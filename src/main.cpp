@@ -66,12 +66,6 @@ int main()
         	  throttle = throttle * fabs(cte);
           }
 
-          /*//Adjust the throttle based on steer angle
-          if( fabs(angle) > 0.2)
-          {
-        	  throttle = throttle * fabs(angle);
-          }*/
-
           json msgJson;
           msgJson["steering_angle"] = steer_value;
           msgJson["throttle"] = throttle;
